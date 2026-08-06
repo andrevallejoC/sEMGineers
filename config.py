@@ -20,7 +20,7 @@ from pathlib import Path
 # BASE_DIR apunta a la carpeta donde vive este archivo (raíz del proyecto),
 # así la app funciona sin importar desde qué directorio se ejecute Streamlit.
 BASE_DIR: Path = Path(__file__).resolve().parent
-DATA_DIR: Path = BASE_DIR / "Data"
+DATA_DIR: Path = BASE_DIR / "data"
 
 # ---------------------------------------------------------------------------
 # Parámetros de adquisición (BITalino + OpenSignals)
