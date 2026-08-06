@@ -120,9 +120,7 @@ The signal processing chain described in the paper follows the standard sEMG con
 5. **RMS computation**: The Root Mean Square is computed by squaring each sample of the signal, averaging the squared values, and taking the square root of the result. RMS quantifies the energy of muscular activity and enables objective comparison of activation intensity between a muscle pair. Higher RMS values indicate greater signal amplitude and, consequently, greater recorded muscular activation.
 6. **Average RMS per condition and channel**: RMS values are computed and averaged separately for each condition (baseline, two-strap, single-strap) and each channel (left and right upper trapezius).
 7. **Muscular Asymmetry Index (MAI) computation**: Bilateral asymmetry between the left and right upper trapezius is quantified using:
-
-   ![MAI equation](docs/images/mai_equation_placeholder.png)
-
+   
    Expressed textually:
 
    ```
@@ -131,7 +129,7 @@ The signal processing chain described in the paper follows the standard sEMG con
 
    where `RMS_greater` and `RMS_lesser` denote the higher and lower RMS values, respectively, between the left and right upper trapezius for a given condition. A lower MAI value indicates greater symmetry between the trapezius muscles, while a higher value indicates greater bilateral imbalance.
 
-8. **Frequency-domain validation**: Fast Fourier Transform (FFT) and Welch periodogram analysis are applied post-filtering to verify that the majority of signal energy is concentrated within the expected sEMG frequency band (20–150 Hz).
+9. **Frequency-domain validation**: Fast Fourier Transform (FFT) and Welch periodogram analysis are applied post-filtering to verify that the majority of signal energy is concentrated within the expected sEMG frequency band (20–150 Hz).
 
 No amplitude normalization method (e.g., %MVIC or %MVC), feature extraction for classification, or signal transmission/storage protocol is described in the paper.
 
