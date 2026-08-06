@@ -93,22 +93,6 @@ The paper does not describe a distinct host/local interface layer, cloud layer, 
 
 ---
 
-## Software Stack
-
-The source paper does not specify the software language, framework, or libraries used for signal processing and analysis. The table below reflects only what is explicitly supported by the paper; all unspecified fields are marked as TODO.
-
-| Category | Details |
-|---|---|
-| Language | TODO |
-| Framework | TODO |
-| Engine | TODO |
-| Libraries | TODO |
-| Database | Not applicable — no data storage system described in the paper |
-| Communication protocols | TODO (BITalino device communication protocol not specified in the paper) |
-| Operating concepts | Offline batch signal processing (band-pass filtering, notch filtering, RMS moving-window smoothing, FFT, Welch periodogram) |
-
----
-
 ## Signal Processing Pipeline
 
 The signal processing chain described in the paper follows the standard sEMG conditioning workflow:
