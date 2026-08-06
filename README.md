@@ -132,8 +132,6 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 
-La aplicación se abrirá automáticamente en el navegador
-(por defecto en `http://localhost:8501`).
 
 ---
 
@@ -214,16 +212,12 @@ The following limitations are explicitly stated in the source paper:
 
 ---
 
-## Future Work
+## Research Contributions
 
-Roadmap items derived from the paper's discussion and conclusion sections:
+- Pilot application of bilateral sEMG-derived Muscular Asymmetry Index (MAI) analysis to a simulated public transport load carriage scenario, an environment characterized by unpredictable dynamic perturbations rather than controlled laboratory perturbations.
+- Preliminary comparative evidence suggesting that habitual transport mode (public versus private) may be associated with differing baseline asymmetry levels and differing neuromuscular response patterns to unilateral versus bilateral backpack loading.
+- Identification of heterogeneous, participant-specific asymmetry response patterns — including a possible bilateral trapezius coactivation strategy as a compensatory mechanism against asymmetric loading — motivating further controlled investigation with larger cohorts.
 
-- [ ] Increase sample size to enable statistically robust and generalizable conclusions.
-- [ ] Randomize the order of load conditions (baseline, two-strap, single-strap) across participants.
-- [ ] Implement stricter signal quality verification procedures to detect and mitigate electrode detachment or acquisition artifacts.
-- [ ] Expand the number of evaluated muscle groups beyond the upper trapezius (e.g., erector spinae).
-- [ ] Adopt longitudinal study designs to assess whether observed neuromuscular strategies translate into long-term musculoskeletal fatigue or pain.
-- [ ] Further investigate whether habitual transport mode (public versus private) is a determining factor in neuromuscular control strategies for trunk stabilization during load carriage.
 
 ---
 
