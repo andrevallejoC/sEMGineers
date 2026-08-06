@@ -260,7 +260,7 @@ For non-code research outputs (documentation, figures, derived datasets), a **Cr
 
 You can access the latest deployed version of **SEMGineers** directly from your browser.
 
-# https://semgineers.streamlit.app/
+### https://semgineers.streamlit.app/
 
 No installation is required. Simply open the link to explore the interactive EMG analysis dashboard, visualize recordings, perform signal processing, inspect spectral features, evaluate bilateral asymmetry, and export processed results.
 
