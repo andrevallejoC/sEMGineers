@@ -93,6 +93,22 @@ The paper does not describe a distinct host/local interface layer, cloud layer, 
 
 ---
 
+## Software Stack
+
+The source paper does not specify the software language, framework, or libraries used for signal processing and analysis. The table below reflects only what is explicitly supported by the paper; all unspecified fields are marked as TODO.
+
+| Category | Details |
+|---|---|
+| Language | TODO |
+| Framework | TODO |
+| Engine | TODO |
+| Libraries | TODO |
+| Database | Not applicable — no data storage system described in the paper |
+| Communication protocols | TODO (BITalino device communication protocol not specified in the paper) |
+| Operating concepts | Offline batch signal processing (band-pass filtering, notch filtering, RMS moving-window smoothing, FFT, Welch periodogram) |
+
+---
+
 ## Signal Processing Pipeline
 
 The signal processing chain described in the paper follows the standard sEMG conditioning workflow:
@@ -104,7 +120,7 @@ The signal processing chain described in the paper follows the standard sEMG con
 5. **RMS computation**: The Root Mean Square is computed by squaring each sample of the signal, averaging the squared values, and taking the square root of the result. RMS quantifies the energy of muscular activity and enables objective comparison of activation intensity between a muscle pair. Higher RMS values indicate greater signal amplitude and, consequently, greater recorded muscular activation.
 6. **Average RMS per condition and channel**: RMS values are computed and averaged separately for each condition (baseline, two-strap, single-strap) and each channel (left and right upper trapezius).
 7. **Muscular Asymmetry Index (MAI) computation**: Bilateral asymmetry between the left and right upper trapezius is quantified using:
-   
+
    Expressed textually:
 
    ```
@@ -113,7 +129,7 @@ The signal processing chain described in the paper follows the standard sEMG con
 
    where `RMS_greater` and `RMS_lesser` denote the higher and lower RMS values, respectively, between the left and right upper trapezius for a given condition. A lower MAI value indicates greater symmetry between the trapezius muscles, while a higher value indicates greater bilateral imbalance.
 
-9. **Frequency-domain validation**: Fast Fourier Transform (FFT) and Welch periodogram analysis are applied post-filtering to verify that the majority of signal energy is concentrated within the expected sEMG frequency band (20–150 Hz).
+8. **Frequency-domain validation**: Fast Fourier Transform (FFT) and Welch periodogram analysis are applied post-filtering to verify that the majority of signal energy is concentrated within the expected sEMG frequency band (20–150 Hz).
 
 No amplitude normalization method (e.g., %MVIC or %MVC), feature extraction for classification, or signal transmission/storage protocol is described in the paper.
 
@@ -121,17 +137,20 @@ No amplitude normalization method (e.g., %MVIC or %MVC), feature extraction for 
 
 ## Installation
 
+<!-- TODO: Provide installation instructions once the processing codebase is published in this repository -->
+
 ```bash
 python -m venv venv
 source venv/bin/activate      # En Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
-
-## Execution
+## Ejecución
 
 ```bash
 streamlit run app.py
-
+```
+La aplicación se abrirá automáticamente en el navegador
+(por defecto en `http://localhost:8501`).
 
 ---
 
@@ -218,7 +237,6 @@ The following limitations are explicitly stated in the source paper:
 - Preliminary comparative evidence suggesting that habitual transport mode (public versus private) may be associated with differing baseline asymmetry levels and differing neuromuscular response patterns to unilateral versus bilateral backpack loading.
 - Identification of heterogeneous, participant-specific asymmetry response patterns — including a possible bilateral trapezius coactivation strategy as a compensatory mechanism against asymmetric loading — motivating further controlled investigation with larger cohorts.
 
-
 ---
 
 ## License
@@ -252,12 +270,14 @@ For non-code research outputs (documentation, figures, derived datasets), a **Cr
 - Electrode placement and sEMG acquisition procedures followed the **SENIAM** (Surface ElectroMyoGraphy for the Non-Invasive Assessment of Muscles) recommendations for sensor placement.
 - The Muscular Asymmetry Index (MAI) methodology applied in this study is based on the asymmetry quantification approach proposed by Castagneri et al. (2019), *IEEE Transactions on Neural Systems and Rehabilitation Engineering*.
 
+---
+
+# Live Application
+
+You can access the latest deployed version of **SEMGineers** directly from your browser.
+
+### https://semgineers.streamlit.app/
+
+No installation is required. Simply open the link to explore the interactive EMG analysis dashboard, visualize recordings, perform signal processing, inspect spectral features, evaluate bilateral asymmetry, and export processed results.
+
 <!-- TODO: Add funding source or grant acknowledgement if applicable -->
-
-## Live Demo
-
-Try the application directly in your browser without any installation.
-
-**Web Application:** https://semgineers.streamlit.app/
-
-> The online version is deployed using Streamlit Community Cloud and includes the complete interactive interface for EMG visualization, signal processing, spectral analysis, bilateral asymmetry assessment, and CSV export.
