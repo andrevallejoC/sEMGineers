@@ -12,7 +12,6 @@
 [![DOI](https://img.shields.io/badge/DOI-TODO-blue.svg)]()
 
 <!-- TODO: Add hero image / banner (e.g., experimental setup or bilateral sEMG signal comparison) -->
-![Project banner placeholder](docs/images/banner_placeholder.png)
 
 ---
 
