@@ -139,14 +139,16 @@ No amplitude normalization method (e.g., %MVIC or %MVC), feature extraction for 
 
 ## Installation
 
-<!-- TODO: Provide installation instructions once the processing codebase is published in this repository -->
+```bash
+python -m venv venv
+source venv/bin/activate      # En Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+## Ejecución
 
 ```bash
-# TODO: Clone repository
-git clone TODO
-
-# TODO: Install dependencies
-TODO
+streamlit run app.py
 ```
 
 ---
