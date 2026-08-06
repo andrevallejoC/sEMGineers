@@ -145,7 +145,7 @@ source venv/bin/activate      # En Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## Ejecución
+## Execution
 
 ```bash
 streamlit run app.py
@@ -243,35 +243,6 @@ Roadmap items derived from the paper's discussion and conclusion sections:
 
 ---
 
-## Research Contributions
-
-- Pilot application of bilateral sEMG-derived Muscular Asymmetry Index (MAI) analysis to a simulated public transport load carriage scenario, an environment characterized by unpredictable dynamic perturbations rather than controlled laboratory perturbations.
-- Preliminary comparative evidence suggesting that habitual transport mode (public versus private) may be associated with differing baseline asymmetry levels and differing neuromuscular response patterns to unilateral versus bilateral backpack loading.
-- Identification of heterogeneous, participant-specific asymmetry response patterns — including a possible bilateral trapezius coactivation strategy as a compensatory mechanism against asymmetric loading — motivating further controlled investigation with larger cohorts.
-
----
-
-## Publication
-
-If you use this work, please cite:
-
-> R. A. Bazalar Gutierrez, A. Vallejo Canchanya, L. G. Samillan García, E. Vega Jauregui, and Y. M. Purisaca Tesen, "Activación y asimetría bilateral de los músculos estabilizadores del tronco durante una simulación de transporte público: estudio piloto mediante electromiografía de superficie" (Bilateral activation and asymmetry of trunk-stabilizer muscles during a public transport simulation: a pilot study using surface electromyography).
-
-```bibtex
-@article{TODO_citekey,
-  title   = {Activaci{\'o}n y asimetr{\'i}a bilateral de los m{\'u}sculos estabilizadores del tronco durante una simulaci{\'o}n de transporte p{\'u}blico: estudio piloto mediante electromiograf{\'i}a de superficie},
-  author  = {Bazalar Gutierrez, Renzo Alvaro and Vallejo Canchanya, Andre and Samillan Garc{\'i}a, Leonardo Gabriel and Vega Jauregui, Enmanuel and Purisaca Tesen, Yandra Melissa},
-  journal = {TODO},
-  volume  = {TODO},
-  number  = {TODO},
-  pages   = {TODO},
-  year    = {TODO},
-  doi     = {TODO}
-}
-```
-
----
-
 ## License
 
 <!-- TODO: Confirm final license selection with all authors before publishing -->
@@ -304,7 +275,6 @@ For non-code research outputs (documentation, figures, derived datasets), a **Cr
 - The Muscular Asymmetry Index (MAI) methodology applied in this study is based on the asymmetry quantification approach proposed by Castagneri et al. (2019), *IEEE Transactions on Neural Systems and Rehabilitation Engineering*.
 
 <!-- TODO: Add funding source or grant acknowledgement if applicable -->
-
 
 ## Live Demo
 
