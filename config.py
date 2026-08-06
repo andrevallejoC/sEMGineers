@@ -68,6 +68,8 @@ PARTICIPANTES: dict[str, str] = {
     "Ale": "ale",
     "Andre": "andre",
     "Sandro": "sandro",
+    "Renzo": "renzo",
+    "Vallejo": "vallejo"
 }
 
 # Nombre visible (UI) -> prefijo usado en el nombre de archivo
